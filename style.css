@@ -1,0 +1,40 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* A very light gray */
+            color: #111827; /* Dark gray for text */
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: #3b82f6;
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .project-card, .friend-card {
+            border: 1px solid #e5e7eb; /* Light gray border */
+            transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+        }
+        .project-card:hover, .friend-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+        }
+        /* Style for the map container */
+        .map-container {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            margin-top: 3rem;
+            border: 1px solid #e5e7eb;
+        }

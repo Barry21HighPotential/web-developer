@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barry - Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo and Name -->
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="barry logo.png" alt="Barry's Logo" class="h-8 w-8 rounded-full">
+                <span class="text-xl font-bold tracking-wider text-gray-900">Barry</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="about.html" class="nav-link text-gray-600 hover:text-blue-500">About</a>
+                <a href="project.html" class="nav-link text-gray-600 hover:text-blue-500">Projects</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="about.html" class="block py-3 px-6 text-gray-600 hover:bg-gray-50">About</a>
+            <a href="project.html" class="block py-3 px-6 text-gray-600 hover:bg-gray-50">Projects</a>
+            <a href="contact.html" class="block py-3 px-6 text-gray-600 hover:bg-gray-50">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+     <!-- Projects Section -->
+        <section id="projects" class="py-24">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+                Things I've Built
+            </h2>
+            
+            <h3 class="text-2xl font-semibold text-center text-gray-700 mb-8">Website Projects</h3>
+            <div class="grid gap-8 grid-cols-[repeat(auto-fit,minmax(320px,1fr))]">
+                <div class="project-card bg-white rounded-lg overflow-hidden flex flex-col">
+                    <img src="Tic-Tac-Toe.png" alt="Tic Tac Toe Game" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e5e7eb/111827?text=Tic-Tac-Toe';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Tic Tac Toe</h3>
+                        <p class="text-gray-600 flex-grow">A classic Tic-Tac-Toe game created with basic JavaScript logic, HTML for structure, and CSS for styling.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+                            <a href="https://barry21highpotential.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer" class="inline-block px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm">
+                                View Project
+                            </a>
+                            <a href="https://github.com/Barry21HighPotential/Tic-Tac-Toe.git" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:underline text-sm font-medium">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg overflow-hidden flex flex-col">
+                    <img src="Aim Game v1.png" alt="Aim Game" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e5e7eb/111827?text=Aim+Game';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Aim Game v1</h3>
+                        <p class="text-gray-600 flex-grow">A simple web-based game to train your mouse clicking speed and accuracy.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+                            <a href="https://barry21highpotential.github.io/Aim-Game-v1/" target="_blank" rel="noopener noreferrer" class="inline-block px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm">
+                                View Project
+                            </a>
+                            <a href="https://github.com/Barry21HighPotential/Aim-Game-v1.git" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:underline text-sm font-medium">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg overflow-hidden flex flex-col">
+                    <img src="Stop Watch.png" alt="Stopwatch" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e5e7eb/111827?text=Stopwatch';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Stop Watch</h3>
+                        <p class="text-gray-600 flex-grow">A digital stopwatch application with start, stop, and reset functionality, built with a clean interface.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+                            <a href="https://barry21highpotential.github.io/Stop-Watch/" target="_blank" rel="noopener noreferrer" class="inline-block px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm">
+                                View Project
+                            </a>
+                            <a href="https://github.com/Barry21HighPotential/Stop-Watch.git" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:underline text-sm font-medium">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-semibold text-center text-gray-700 mt-16 mb-8">Applications</h3>
+            <div class="grid gap-8 grid-cols-[repeat(auto-fit,minmax(320px,1fr))]">
+                <div class="project-card bg-white rounded-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/e5e7eb/111827?text=Python+App" alt="Python App Example" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Coming Soon</h3>
+                        <p class="text-gray-600 flex-grow">-</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+                            <a href="#" class="inline-block px-5 py-2 bg-gray-400 text-white font-semibold rounded-lg text-sm cursor-not-allowed">
+                                View Project
+                            </a>
+                            <a href="#" class="text-gray-600 hover:underline text-sm font-medium">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/e5e7eb/111827?text=React+App" alt="React App Example" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Coming Soon</h3>
+                        <p class="text-gray-600 flex-grow">-</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React.js</span>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+                            <a href="#" class="inline-block px-5 py-2 bg-gray-400 text-white font-semibold rounded-lg text-sm cursor-not-allowed">
+                                View Project
+                            </a>
+                            <a href="#" class="text-gray-600 hover:underline text-sm font-medium">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-semibold text-center text-gray-700 mt-16 mb-8">Data Visualization & Dashboards</h3>
+            <div class="grid gap-8 grid-cols-[repeat(auto-fit,minmax(320px,1fr))]">
+                <div class="project-card bg-white rounded-lg overflow-hidden flex flex-col">
+                    <img src="Sales Dashboard.png" alt="Excel Dashboard Example" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Sales Dashboard (Tableau)</h3>
+                        <p class="text-gray-600 flex-grow">An interactive Sales Dashboard in Tableau to analyze sales performance, showing total sales, profit, and quantity growth compared to last year.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Tableau</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Excel</span>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+                            <a href="https://public.tableau.com/views/BariTableauSalesDashboard/SalesDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener noreferrer" class="inline-block px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg overflow-hidden flex flex-col">
+                    <img src="Customer Dashboard.png" alt="Tableau Dashboard Example" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Customer Dashboard (Tableau)</h3>
+                        <p class="text-gray-600 flex-grow">An interactive Customer Dashboard in Tableau to analyze customer performance in 2023, helping identify key accounts and growth opportunities.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Tableau</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Excel</span>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+                            <a href="https://public.tableau.com/views/BariSalesCustomersDashboard/CustomerDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener noreferrer" class="inline-block px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-card bg-white rounded-lg overflow-hidden flex flex-col">
+                    <img src="SalesReport-VBA.png" alt="VBA Sales Report" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">SalesReport-VBA</h3>
+                        <p class="text-gray-600 flex-grow">An interactive Sales Report Dashboard built with VBA to analyze sales data, including dynamic slicers and charts for key metrics.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Excel</span>
+                             <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">VBA</span>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+                            <a href="https://github.com/Barry21HighPotential/SalesReport-VBA.git" target="_blank" rel="noopener noreferrer" class="inline-block px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg overflow-hidden flex flex-col">
+                    <img src="HR Dashboard.png" alt="VBA Sales Report" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">HR Dashboard</h3>
+                        <p class="text-gray-600 flex-grow">An interactive HR Dashboard in Tableau to analyze employee data, including hires, terminations, demographics, and performance.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Tableau</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Excel</span>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+                            <a href="https://public.tableau.com/views/BarryHRDashboard/HRSummary?:language=en-US&:sid=6C622FC3E3FD44C0828F426AB25F2B59-0:0&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener noreferrer" class="inline-block px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
